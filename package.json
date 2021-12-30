@@ -1,0 +1,20 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "weather",
+    "api",
+    "app"
+  ],
+  "author": "muscularmayo/chris risden",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.0.0",
+    "live-server": "^1.2.1"
+  }
+}
