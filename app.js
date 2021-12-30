@@ -1,24 +1,35 @@
-//import weatherAPIKey, giphyAPIKey from './api_keys.js'
+import {weatherAPIKey, giphyAPIKey }from './api_keys.js'
 
-/*
 
-console.log(weatherAPIKey, giphyAPIKey)
+//console.log(weatherAPIKey, giphyAPIKey)
 const btn = document.querySelector('button')
 btn.addEventListener('click', searchWeather)
 const img = document.querySelector('img'); //selecting the image so we can transform it shortly
-const fetchURL = 'api.openweathermap.org/data/2.5/weather?q=${}&appid=${}'
+//final URL = `api.openweathermap.org/data/2.5/weather?q=${}&appid=${}``
+const noKeyNoLocationWeatherURL = 'https://api.openweathermap.org/data/2.5/weather?q='
+const noSearchGiphyURL = `https://api.giphy.com/v1/gifs/translate?api_key=${giphyAPIKey}&s=`
 
 
 
 
 
-
-const searchWeather = function() {
-
-
+function searchWeather () {
+  const locationQuery = document.querySelector('#search').value;
+  const fetchURL = noKeyNoLocationWeatherURL + locationQuery + `&appid=${weatherAPIKey}`
+  console.log(fetchURL)
+  fetch (fetchURL)
+    .then(function(response) {
+      return response.json()
+    })
+    .then((data) => {
+      console.log(data)
+    })
+    .catch((err) => console.error(err))
 }
 
-*/
+
+
+
 
 /*
 function spawnCatGif() {
