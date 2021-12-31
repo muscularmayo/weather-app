@@ -12,10 +12,13 @@ body {
   background-color: lightsteelblue;
   order: 2;
   size: 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #weather {
-  display: grid
+  display: grid;
+  grid-template-columns: 2fr 7fr;
 }
 
 #gif {
@@ -23,4 +26,8 @@ body {
   min-height: 350px;
   max-width: 480px;
   min-width: 480px;
+}
+
+div {
+  border-color: black;
 }
