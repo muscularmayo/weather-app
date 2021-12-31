@@ -29,7 +29,9 @@ function searchCurrentWeather (location) {
         clearDiv('#current')
         clearDiv('#weekly')
         h1.innerText = 'Please Enter a Real City'
+        console.log('test')
         return;
+
       }
 
       h1.innerText = data.name
