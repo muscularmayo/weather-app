@@ -1,0 +1,26 @@
+body {
+  background-color: lightsalmon;
+}
+
+#current {
+  background-color: bisque;
+  order: 1;
+  size: 1;
+}
+
+#weekly {
+  background-color: lightsteelblue;
+  order: 2;
+  size: 4;
+}
+
+#weather {
+  display: grid
+}
+
+#gif {
+  max-height: 350px;
+  min-height: 350px;
+  max-width: 480px;
+  min-width: 480px;
+}
