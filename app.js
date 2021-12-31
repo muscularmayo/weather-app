@@ -21,15 +21,16 @@ function searchCurrentWeather (location) {
     })
     .then((data) => {
       console.log(data, 'original')
+      const h1 = document.querySelector('#locationTitle');
+
       if (data.cod === '404') {
         appropriateGIF('404 error')
         console.log('location not found')
         clearDiv('#current')
         clearDiv('#weekly')
-
-
+        h1.innerText = 'Please Enter a Real City'
+        return;
       }
-      const h1 = document.querySelector('#locationTitle');
 
       h1.innerText = data.name
       appropriateGIF(data.weather[0].description) //description of the weather
