@@ -1,6 +1,6 @@
 # weather_app
 
-https://muscularmayo.github.io/weather_app/
+https://muscularmayo.github.io/weather-app/
 
 weather!!! making calls to api to check out weather worldwide
 
